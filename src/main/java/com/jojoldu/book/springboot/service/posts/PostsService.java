@@ -51,4 +51,13 @@ public class PostsService {
             .map(PostsListResponseDto::new) // 각 원소를 Dto로 wrapping
             .collect(Collectors.toList()); // 결과를 List로 반환
     }
+
+    @Transactional
+    public void delete(Long id) {
+        Posts posts = postsRepository.findById(id)
+            .orElseThrow(() -> new IllegalArgumentException("해당 게시글이 없습니다. id="+id));
+
+        postsRepository.delete(posts);
+
+    }
 }
