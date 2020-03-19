@@ -1,5 +1,7 @@
 package com.jojoldu.book.springboot.config.auth.dto;
 
+import java.io.Serializable;
+
 import com.jojoldu.book.springboot.domain.user.User;
 
 import lombok.Getter;
@@ -17,7 +19,7 @@ import lombok.Getter;
  *          - 관계를 맺게 되면 직렬화 대상에 관계 엔티티도 포함되게됨 = 성능 이슈
  */
 @Getter
-public class SessionUser {
+public class SessionUser implements Serializable {
 
     private String name;
     private String email;
