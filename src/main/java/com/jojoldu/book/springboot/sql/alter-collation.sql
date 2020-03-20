@@ -1,1 +1,0 @@
-Alter database springboot_practice_webservice character set = 'utf8mb4' collate = 'utf8mb4_general_ci';
