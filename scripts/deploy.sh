@@ -3,7 +3,7 @@
 REPOSITORY=/home/ec2-user/app/step2
 PROJECT_NAME=springboot-practice
 
-echo pwd;
+echo $(pwd);
 
 echo "> Copy build file to $REPOSITORY"
 
