@@ -31,6 +31,20 @@ deploy:
     local_dir: deploy
     wait-unil-deployed: true
 
+  - provider: codedeploy
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
+
+    bucket: build-springboot-practice
+    key: springboot-practice.zip
+
+    bundle_type: zip
+    application: springboot-practice
+
+    deployment_group: springboot-practice-group
+    region: ap-northeast-2
+    wait-unil-deployed: true
+
 notification: 
   email:
     recipients:
