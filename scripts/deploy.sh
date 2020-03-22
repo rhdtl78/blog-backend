@@ -10,7 +10,7 @@ cp $REPOSITORY/zip/*.jar $REPOSITORY
 
 echo "> Check pid of already running application"
 
-CURRENT_PID=$(pgrep -fl springboot-practice | grep jar | awk '{print $1}')
+CURRENT_PID=$(pgrep -fl springboot-practice | grep java | awk '{print $1}')
 
 echo "  Currntly running application pid : $CURRENT_PID"
 
