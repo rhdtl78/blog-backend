@@ -9,7 +9,7 @@ cp $REPOSITORY/zip/*.jar $REPOSITORY
 
 echo "> Check pid of already running application"
 
-CURRENT_PID=$(pgrep -fl $PROJECT_NAME | grep jar | awk '{print $1}')
+CURRENT_PID=$(pgrep -fl ${PROJECT_NAME}.*.jar | grep jar | awk '{print $1}')
 
 echo "  Currntly running application pid : $CURRENT_PID"
 
