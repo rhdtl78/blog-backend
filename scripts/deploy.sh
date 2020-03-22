@@ -3,7 +3,6 @@
 REPOSITORY=/home/ec2-user/app/step2
 PROJECT_NAME=springboot-practice
 
-cd $REPOSITORY
 
 echo "> Copy build file to $REPOSITORY"
 
@@ -26,7 +25,7 @@ fi
 
 echo "> Deploy new application"
 
-JAR_NAME=$(ls -tr $REPOSITORY/ | grep *.jar | tail -n 1)
+JAR_NAME=$(ls -tr $REPOSITORY/*.jar | tail -n 1)
 
 echo "> JAR Name : $JAR_NAME"
 
