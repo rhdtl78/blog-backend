@@ -9,6 +9,16 @@
             "mainClass": "com.jojoldu.book.springboot.Application",
             "projectName": "freelec-springboot2",
             "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Application<springboot-practice>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.jojoldu.book.springboot.Application",
+            "projectName": "springboot-practice",
+            "args": ""
         }
     ]
 }
